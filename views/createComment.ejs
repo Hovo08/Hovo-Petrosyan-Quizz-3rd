@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Comment</title>
+</head>
+<body>
+    <h1>Create Comment</h1>
+    <form id="comment-form">
+        <input type="text" id="commentMessage" placeholder="Add a comment" required />
+        <input type="hidden" id="postId" value="<%= postId %>" />
+        <button type="submit">Submit Comment</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/javascripts/createComment.js"></script>
+</body>
+</html>
